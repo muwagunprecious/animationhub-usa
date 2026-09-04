@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation Hub USA | Master 3D Animation & Launch Your Studio Career</title>
+  <meta name="description" content="Industry-led online training designed to take you from foundational sculpting to feature-film VFX with full tuition sponsorships available.">
+  
+  <!-- Google Fonts: Montserrat & Caveat Script -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Dancing+Script:wght@700&family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <script type="module" crossorigin src="/assets/index-MFYscUxc.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-LcfbgcUU.css">
+</head>
+<body>
+
+  <!-- Sticky Black Navigation Bar (Exact style from Reference Screenshot 2) -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo" onclick="switchTab('home')">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <span>ANIMATION HUB USA</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a class="nav-link active" data-tab="home" onclick="switchTab('home')">HOME</a></li>
+        <li><a class="nav-link" data-tab="programs" onclick="switchTab('programs')">PROGRAMS</a></li>
+        <li><a class="nav-link" data-tab="showcase" onclick="switchTab('showcase')">STUDENT SHOWCASE</a></li>
+        <li><a class="nav-link" data-tab="about" onclick="switchTab('about')">ABOUT & VISION</a></li>
+        <li><a class="nav-link" onclick="openSignInModal()">LOGIN</a></li>
+      </ul>
+
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <button class="btn btn-amber" onclick="openApplyModal()">APPLY NOW</button>
+        <button class="hamburger-btn" onclick="toggleMobileDrawer()" aria-label="Toggle Navigation">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="drawer-overlay" id="drawer-overlay" onclick="toggleMobileDrawer()"></div>
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div>
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem;">
+        <a href="#" class="logo" onclick="switchTab('home'); toggleMobileDrawer()">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <span>ANIMATION HUB USA</span>
+        </a>
+        <button style="background:none; border:none; color:#FFF; font-size:1.5rem;" onclick="toggleMobileDrawer()">&times;</button>
+      </div>
+
+      <ul class="drawer-links">
+        <li><a class="drawer-link" onclick="switchTab('home'); toggleMobileDrawer()">HOME</a></li>
+        <li><a class="drawer-link" onclick="switchTab('programs'); toggleMobileDrawer()">PROGRAMS</a></li>
+        <li><a class="drawer-link" onclick="switchTab('showcase'); toggleMobileDrawer()">STUDENT SHOWCASE</a></li>
+        <li><a class="drawer-link" onclick="switchTab('about'); toggleMobileDrawer()">ABOUT & VISION</a></li>
+      </ul>
+    </div>
+
+    <button class="btn btn-amber" style="width: 100%" onclick="openApplyModal(); toggleMobileDrawer()">APPLY NOW</button>
+  </div>
+
+  <!-- MAIN SPA CONTENT -->
+  <main>
+    
+    <!-- 1. HOME VIEW -->
+    <div id="home-view" class="page-view active">
+      
+      <!-- HERO SECTION (Background Video & Glass Overlay) -->
+      <section class="hero-section">
+        <!-- Background Loop Video -->
+        <video class="hero-bg-video" autoplay loop muted playsinline poster="/assets/hero-studio-bg-BzIKQvsY.jpg">
+          <source src="/assets/hero-boy-video-Ob5hXHGg.mp4" type="video/mp4">
+        </video>
+        <div class="hero-video-overlay"></div>
+
+        <div class="container">
+          <div class="hero-body">
+            
+            <!-- Hero Headline & Script Text -->
+            <div class="hero-text-box">
+              <div class="outline-text">DISCOVER</div>
+              <div class="script-text">Who we are</div>
+              
+              <p class="hero-desc">
+                Industry-led online training designed to take you from foundational sculpting to feature-film VFX—with full tuition sponsorships available for qualified applicants.
+              </p>
+              
+              <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <button class="btn btn-amber" onclick="openApplyModal()">JOIN APPLICATION LIST &rarr;</button>
+                <button class="btn btn-outline" onclick="switchTab('programs')">EXPLORE TRACKS</button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Hero Bottom Icon Navigation Bar (Exact structure from Screenshot 2) -->
+          <div class="hero-icon-bar">
+            <div class="icon-bar-item" onclick="switchTab('about')">
+              <div class="bar-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <span class="bar-icon-label">OUR STORY</span>
+            </div>
+
+            <div class="icon-bar-item" onclick="switchTab('about')">
+              <div class="bar-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17"></path><path d="m7 21 1.6-1.4c.4-.4.9-.6 1.4-.6h4c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v10"></path></svg>
+              </div>
+              <span class="bar-icon-label">OUR PARTNERS</span>
+            </div>
+
+            <div class="icon-bar-item" onclick="switchTab('home', 'sponsorship-section')">
+              <div class="bar-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
+              </div>
+              <span class="bar-icon-label">OUR MISSION</span>
+            </div>
+
+            <div class="icon-bar-item" onclick="switchTab('showcase')">
+              <div class="bar-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </div>
+              <span class="bar-icon-label">OUR VISION</span>
+      </section>
+
+      <!-- WHO ARE WE SECTION (Recreated directly from User Reference Image) -->
+      <section class="who-are-we-section" id="who-are-we-section">
+        <div class="container">
+          <div class="who-are-we-card">
+            <div class="who-are-we-grid">
+              <div class="who-are-we-text-box">
+                <h2 class="who-are-we-title">Who are we?</h2>
+                <p class="who-are-we-lead">
+                  Welcome to Animation Hub, your gateway to unlocking the world of animation in the world.
+                </p>
+                <p class="who-are-we-body">
+                  At Animation Hub, we are passionate about fostering creativity, empowering individuals, and championing African storytelling through the art of animation.
+                </p>
+                <button class="btn-register-child" onclick="openApplyModal('Kids & Youth Animation')">
+                  Register a Child
+                </button>
+              </div>
+              <div class="who-are-we-image-box">
+                <img src="/assets/who-we-are-team-cropped-XO6a9adq.jpg" alt="Animation Hub Team Members" class="who-are-we-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DISCOVER ANIMATION HUB USA: CREATIVITY MEETS INNOVATION SECTION (Matching Reference Screenshot 1) -->
+      <section class="creativity-section">
+        <div class="container creativity-grid">
+          <div class="creativity-text-box">
+            <div class="outline-text" style="font-size: 2.8rem;">DISCOVER ANIMATION HUB USA</div>
+            <div class="script-text" style="font-size: 2.5rem; margin-bottom: 0.5rem;">Where Creativity Meets Innovation</div>
+            
+            <p class="creativity-body-copy">
+              Welcome to Animation Hub USA, the premier 3D Animation & Visual Effects Academy. We are committed to nurturing the next generation of animators, 3D sculptors, and digital storytellers. Our comprehensive programs, led by senior industry leads from top animation studios, offer hands-on production training in the latest animation software and pipelines.
+              <br><br>
+              At Animation Hub USA, we foster a dynamic learning environment that encourages creative exploration, technical mastery, and studio career growth. Join us to transform your creative passion into a thriving career.
+            </p>
+            
+            <button class="btn btn-amber" onclick="openApplyModal()">
+              EXPLORE ANIMATION HUB USA ACADEMY &rarr;
+            </button>
+          </div>
+
+          <div class="creativity-stage">
+            <div class="creativity-glow-orb"></div>
+            <img src="/assets/superhero-character-DwnoH1rs.png" alt="3D Superhero Character Model" class="superhero-character-img">
+          </div>
+        </div>
+      </section>
+
+      <!-- 8-CARD CORE DISCIPLINES GRID (Recreated directly from Reference Screenshot 1) -->
+      <section class="disciplines-section">
+        <div class="container">
+          <div class="section-header-centered">
+            <div class="outline-text" style="font-size: 3rem;">PRODUCTION</div>
+            <div class="script-text" style="font-size: 2.8rem; margin-bottom: 0.5rem;">Specialized Tracks</div>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Master the exact studio pipelines for 3D animation, VFX, and post-production.</p>
+          </div>
+
+          <div class="disciplines-grid-8">
+            <!-- Card 1: 3D PRODUCTION -->
+            <div class="discipline-card-reference" onclick="openApplyModal('3D Production')">
+              <img src="/assets/track-3d-production-B6b-kTRA.jpg" alt="3D Production" class="card-bg-image">
+              <div class="card-amber-banner">3D PRODUCTION</div>
+            </div>
+
+            <!-- Card 2: MODELLING -->
+            <div class="discipline-card-reference" onclick="openApplyModal('Modelling')">
+              <img src="/assets/track-modelling-y8Q0AmS4.jpg" alt="Modelling" class="card-bg-image">
+              <div class="card-amber-banner">MODELLING</div>
+            </div>
+
+            <!-- Card 3: POST-PRODUCTION -->
+            <div class="discipline-card-reference" onclick="openApplyModal('Post-Production')">
+              <img src="/assets/track-post-production-ltutF0qF.jpg" alt="Post-Production" class="card-bg-image">
+              <div class="card-amber-banner">POST-PRODUCTION</div>
+            </div>
+
+            <!-- Card 4: VFX -->
+            <div class="discipline-card-reference" onclick="openApplyModal('VFX & Compositing')">
+              <img src="/assets/track-vfx-RhwmX1iV.jpg" alt="VFX" class="card-bg-image">
+              <div class="card-amber-banner">VFX</div>
+            </div>
+
+            <!-- Card 5: STORYBOARDING -->
+            <div class="discipline-card-reference" onclick="openApplyModal('Full Stack Animation')">
+              <img src="/assets/track-storyboarding-DemROofy.jpg" alt="Storyboarding" class="card-bg-image">
+              <div class="card-amber-banner">STORYBOARDING</div>
+            </div>
+
+            <!-- Card 6: STORY TELLING -->
+            <div class="discipline-card-reference" onclick="openApplyModal('Full Stack Animation')">
+              <img src="/assets/track-story-telling-CLH7ddyv.jpg" alt="Story Telling" class="card-bg-image">
+              <div class="card-amber-banner">STORY TELLING</div>
+            </div>
+
+            <!-- Card 7: RIGGING & ANIMATION -->
+            <div class="discipline-card-reference" onclick="openApplyModal('3D Production')">
+              <img src="/assets/track-rigging-BA9s0PPn.jpg" alt="Rigging & Animation" class="card-bg-image">
+              <div class="card-amber-banner">RIGGING & ANIMATION</div>
+            </div>
+
+            <!-- Card 8: AUDIO & SOUND -->
+            <div class="discipline-card-reference" onclick="openApplyModal('Full Stack Animation')">
+              <img src="/assets/track-audio-sound-DzE3FwwJ.jpg" alt="Audio & Sound" class="card-bg-image">
+              <div class="card-amber-banner">AUDIO & SOUND</div>
+            </div>
+          </div>
+
+          <!-- DISCOVER THE PROGRAM LANDSCAPE BANNER (White Background Card with 3D Studio Meeting Image) -->
+          <div class="discover-banner-landscape">
+            <div class="discover-grid-2col">
+              <div class="discover-landscape-content">
+                <div class="outline-text discover-outline-dark" style="font-size: 3.5rem;">DISCOVER</div>
+                <div class="script-text discover-script-dark" style="font-size: 3.2rem;">The Program</div>
+                <p class="discover-desc-dark">
+                  Unleash your talent. There is a studio training program adapted for every passion.
+                </p>
+                <button class="btn btn-black-rect" onclick="switchTab('programs')">EXPLORE ALL CURRICULUMS &rarr;</button>
+              </div>
+              <div class="discover-image-box">
+                <img src="/assets/animation-studio-meeting-B3pI4cZm.jpg" alt="Animation Studio Team Meeting" class="discover-banner-img">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- 2. PROGRAMS VIEW (Redesigned matching User UI Reference) -->
+    <div id="programs-view" class="page-view">
+      <section>
+        <div class="container">
+          
+          <!-- Reference UI Dark Container Box -->
+          <div class="training-roadmap-box">
+            <h2 class="training-title">2 Month Animation Training</h2>
+            <p class="training-desc">
+              Are you ready to turn your passion for animation into a professional skill? Animation Hub USA invites you to our intensive 2-month training program, where you'll master the art of storytelling, character design, and motion graphics.
+            </p>
+            <button class="btn-white-rect" onclick="openApplyModal('Full Stack Animation')">
+              Adult Registration
+            </button>
+          </div>
+
+          <!-- Section Header for Level Track -->
+          <div class="section-header-centered">
+            <div class="outline-text">ROADMAP</div>
+            <div class="script-text">Curriculum Levels</div>
+            <p style="color: var(--text-muted); max-width: 600px; margin: -0.5rem auto 1.5rem auto; font-size: 0.95rem;">
+              Swipe or scroll through the 4-stage production progression designed for studio hiring requirements.
+            </p>
+          </div>
+
+          <!-- Scrolling Controls & Interactive Track -->
+          <div class="roadmap-scroll-wrapper">
+            <div class="roadmap-scroll-controls">
+              <button class="scroll-btn" onclick="scrollRoadmap(-1)" aria-label="Scroll Left">&larr;</button>
+              <button class="scroll-btn" onclick="scrollRoadmap(1)" aria-label="Scroll Right">&rarr;</button>
+            </div>
+
+            <div class="roadmap-scroll-track" id="roadmap-scroll-track">
+              <!-- Level 1 Card -->
+              <div class="roadmap-scroll-card">
+                <div>
+                  <div class="roadmap-level-tag">
+                    <span>LEVEL 01</span>
+                    <span>WEEKS 1–8</span>
+                  </div>
+                  <h3 class="roadmap-level-title">Foundational Sculpting & Mesh Rigging</h3>
+                  <p class="roadmap-level-desc">Anatomy fundamentals, character topology, bone rigging, weight painting, and keyframe animation principles.</p>
+                </div>
+                <div>
+                  <div style="font-weight: 700; font-size: 0.78rem; color: var(--amber-primary); text-transform: uppercase;">Software Tools:</div>
+                  <div class="roadmap-tool-chips">
+                    <span class="roadmap-chip">Autodesk Maya</span>
+                    <span class="roadmap-chip">ZBrush</span>
+                    <span class="roadmap-chip">Blender 4.0</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Level 2 Card -->
+              <div class="roadmap-scroll-card">
+                <div>
+                  <div class="roadmap-level-tag" style="color: var(--cyan-glow);">
+                    <span>LEVEL 02</span>
+                    <span>WEEKS 9–16</span>
+                  </div>
+                  <h3 class="roadmap-level-title">Advanced Asset & Environment Creation</h3>
+                  <p class="roadmap-level-desc">PBR texturing, organic creature sculpting, Unreal Engine 5 scene lighting, and facial blendshape rigs.</p>
+                </div>
+                <div>
+                  <div style="font-weight: 700; font-size: 0.78rem; color: var(--amber-primary); text-transform: uppercase;">Software Tools:</div>
+                  <div class="roadmap-tool-chips">
+                    <span class="roadmap-chip">Unreal Engine 5</span>
+                    <span class="roadmap-chip">Substance Painter</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Level 3 Card -->
+              <div class="roadmap-scroll-card">
+                <div>
+                  <div class="roadmap-level-tag">
+                    <span>LEVEL 03</span>
+                    <span>WEEKS 17–26</span>
+                  </div>
+                  <h3 class="roadmap-level-title">VFX Simulations & Compositing</h3>
+                  <p class="roadmap-level-desc">Houdini particle dynamics, fluid/fire simulations, green-screen keying, and Nuke node-based compositing.</p>
+                </div>
+                <div>
+                  <div style="font-weight: 700; font-size: 0.78rem; color: var(--amber-primary); text-transform: uppercase;">Software Tools:</div>
+                  <div class="roadmap-tool-chips">
+                    <span class="roadmap-chip">Houdini</span>
+                    <span class="roadmap-chip">Foundry Nuke</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Level 4 Card -->
+              <div class="roadmap-scroll-card">
+                <div>
+                  <div class="roadmap-level-tag" style="color: var(--amber-primary);">
+                    <span>LEVEL 04</span>
+                    <span>WEEKS 27–32</span>
+                  </div>
+                  <h3 class="roadmap-level-title">Feature Film Portfolio & Studio Placement</h3>
+                  <p class="roadmap-level-desc">Direct 1-on-1 mentorship with Disney/ILM studio supervisors to produce 3 hiring-ready breakdown scenes.</p>
+                </div>
+                <div>
+                  <div style="font-weight: 700; font-size: 0.78rem; color: var(--amber-primary); text-transform: uppercase;">Deliverable:</div>
+                  <div class="roadmap-tool-chips">
+                    <span class="roadmap-chip">Studio Hiring Reel</span>
+                    <span class="roadmap-chip">Mentor Sign-off</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- 3. STUDENT SHOWCASE VIEW -->
+    <div id="showcase-view" class="page-view">
+      <section>
+        <div class="container">
+          <div class="section-header-centered">
+            <div class="outline-text">SHOWCASE</div>
+            <div class="script-text">Student Projects</div>
+            <p style="color: var(--text-muted); max-width: 600px; margin: -0.5rem auto 2rem auto; font-size: 0.95rem;">
+              Explore feature portfolio shots created by Animation Hub USA graduates currently working at major animation studios.
+            </p>
+          </div>
+
+          <!-- Touch-Friendly Showcase Filter Pills -->
+          <div class="showcase-filters">
+            <button class="filter-pill active" onclick="filterShowcase('all', this)">ALL PROJECTS</button>
+            <button class="filter-pill" onclick="filterShowcase('characters', this)">CHARACTERS</button>
+            <button class="filter-pill" onclick="filterShowcase('environments', this)">ENVIRONMENTS</button>
+            <button class="filter-pill" onclick="filterShowcase('vfx', this)">VFX SHOTS</button>
+            <button class="filter-pill" onclick="filterShowcase('breakdowns', this)">BREAKDOWNS</button>
+          </div>
+
+          <!-- Mobile Responsive Showcase Grid -->
+          <div class="showcase-grid" id="showcase-grid">
+            <div class="showcase-item" data-category="characters" onclick="openAssetModal('Leo - Stylized Explorer', 'Lucas Vance', 'Character Track', 'assets/images/hero-character.jpg')">
+              <img src="/assets/hero-character-D8icWdn4.jpg" class="showcase-img" alt="Leo Character Model">
+              <div class="showcase-overlay">
+                <div class="showcase-play-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                </div>
+                <h3 style="color:#FFF; font-size: 1.15rem; margin-bottom: 0.2rem;">Leo - Character Rig</h3>
+                <p style="color:var(--amber-primary); font-size:0.85rem; font-weight: 700;">Lucas Vance • Mentored by Pixar Lead</p>
+              </div>
+            </div>
+
+            <div class="showcase-item" data-category="environments" onclick="openAssetModal('Tropical Baobab Jungle', 'Elena Rostova', 'Environment Track', 'assets/images/section3-landscape.jpg')">
+              <img src="/assets/hero-nature-bg-B7KcTgRa.jpg" class="showcase-img" alt="Tropical Environment">
+              <div class="showcase-overlay">
+                <div class="showcase-play-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                </div>
+                <h3 style="color:#FFF; font-size: 1.15rem; margin-bottom: 0.2rem;">Tropical Baobab Jungle</h3>
+                <p style="color:var(--amber-primary); font-size:0.85rem; font-weight: 700;">Elena Rostova • Hired at Weta FX</p>
+              </div>
+            </div>
+
+            <div class="showcase-item" data-category="vfx" onclick="openAssetModal('Cyber Liquid Dynamics', 'Marcus Thorne', 'VFX Track', 'assets/images/hero-studio-bg.jpg')">
+              <img src="/assets/hero-studio-bg-BzIKQvsY.jpg" class="showcase-img" alt="VFX Studio Render">
+              <div class="showcase-overlay">
+                <div class="showcase-play-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                </div>
+                <h3 style="color:#FFF; font-size: 1.15rem; margin-bottom: 0.2rem;">Cyber Liquid Simulation</h3>
+                <p style="color:var(--amber-primary); font-size:0.85rem; font-weight: 700;">Marcus Thorne • Hired at ILM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 4. ABOUT VIEW -->
+    <div id="about-view" class="page-view">
+      <section>
+        <div class="container">
+          <div class="section-header-centered" style="margin-bottom: 2.5rem;">
+            <div class="outline-text" style="font-size: 3.5rem;">ABOUT US</div>
+            <div class="script-text" style="font-size: 3rem;">Our Studio Vision</div>
+            <p style="max-width: 700px; margin: 0 auto; color: var(--text-main); font-size: 1.15rem;">
+              "Empowering the next generation of digital artists with studio-grade education and accessible pathways into top-tier animation careers."
+            </p>
+          </div>
+
+          <!-- Who Are We Section Card inside About View -->
+          <div class="who-are-we-card">
+            <div class="who-are-we-grid">
+              <div class="who-are-we-text-box">
+                <h2 class="who-are-we-title">Who are we?</h2>
+                <p class="who-are-we-lead">
+                  Welcome to Animation Hub, your gateway to unlocking the world of animation in the world.
+                </p>
+                <p class="who-are-we-body">
+                  At Animation Hub, we are passionate about fostering creativity, empowering individuals, and championing African storytelling through the art of animation.
+                </p>
+                <button class="btn-register-child" onclick="openApplyModal('Kids & Youth Animation')">
+                  Register a Child
+                </button>
+              </div>
+              <div class="who-are-we-image-box">
+                <img src="/assets/who-we-are-team-cropped-XO6a9adq.jpg" alt="Animation Hub Team Members" class="who-are-we-img">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 2rem;">
+        <a href="#" class="logo">
+          <div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <span>ANIMATION HUB USA</span>
+        </a>
+        <div style="display: flex; gap: 1.5rem;">
+          <a onclick="switchTab('programs')" style="color:var(--text-muted); cursor:pointer;">PROGRAMS</a>
+          <a onclick="switchTab('showcase')" style="color:var(--text-muted); cursor:pointer;">SHOWCASE</a>
+          <a onclick="openApplyModal()" style="color:var(--amber-primary); font-weight:800; cursor:pointer;">APPLY NOW</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 ANIMATION HUB USA ACADEMY INC. ALL RIGHTS RESERVED.
+      </div>
+    </div>
+  </footer>
+
+  <!-- APPLY NOW POP-UP MODAL (Form & Step 2 Success View) -->
+  <div class="modal-backdrop" id="application-modal" onclick="handleBackdropClick(event)">
+    <div class="modal-card">
+      <button class="modal-close-btn" onclick="closeApplyModal()">&times;</button>
+      
+      <!-- Step 1 Form -->
+      <div id="modal-step-1">
+        <div style="margin-bottom: 1.5rem;">
+          <div class="outline-text" style="font-size: 2.2rem;">APPLY TODAY</div>
+          <div class="script-text" style="font-size: 2rem; margin-bottom: 0.2rem;">Animation Hub USA</div>
+        </div>
+
+        <form id="apply-form" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label class="form-label" for="full-name">Full Name *</label>
+            <input type="text" id="full-name" class="form-input" placeholder="e.g. Alex Mercer" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email-address">Email Address *</label>
+            <input type="email" id="email-address" class="form-input" placeholder="alex@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="phone-number">Phone Number *</label>
+            <input type="tel" id="phone-number" class="form-input" placeholder="+1 (555) 000-0000" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="country-residence">Country *</label>
+            <select id="country-residence" class="form-select" required>
+              <option value="" disabled selected>Select country</option>
+              <option value="United States">United States</option>
+              <option value="Canada">Canada</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="Other">Other International</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="desired-track">Desired Track *</label>
+            <select id="desired-track" class="form-select" required>
+              <option value="" disabled selected>Select track</option>
+              <option value="Kids & Youth Animation">Kids & Youth Animation (Register a Child)</option>
+              <option value="3D Production">3D Production</option>
+              <option value="Modelling">Modelling</option>
+              <option value="Post-Production">Post-Production</option>
+              <option value="VFX & Compositing">VFX & Compositing</option>
+            </select>
+          </div>
+
+          <div class="form-group" style="margin-top: 1rem;">
+            <label style="display:flex; align-items:center; gap:0.6rem; cursor:pointer; font-size:0.85rem;">
+              <input type="checkbox" id="sponsorship-request" style="accent-color: var(--amber-primary); width:18px; height:18px;">
+              <span>I wish to apply for Full Tuition Sponsorship</span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-amber" style="width: 100%; margin-top: 1rem;">
+            SUBMIT APPLICATION &rarr;
+          </button>
+        </form>
+      </div>
+
+      <!-- Step 2 Success View -->
+      <div id="modal-step-2" style="display: none; text-align: center;">
+        <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">🎉</div>
+        <div class="outline-text" style="font-size: 2.2rem;">APPLICATION RECEIVED!</div>
+        <div class="script-text" style="font-size: 2rem; margin-bottom: 1rem;">Welcome, <span id="success-applicant-name">Applicant</span></div>
+        
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
+          We’ve received your application for the <strong id="success-track-name" style="color: var(--amber-primary);">[Track]</strong> program. Check <span id="success-applicant-email" style="color: var(--amber-primary);">[Email]</span> within 48 hours for review status.
+        </p>
+
+        <button class="btn btn-amber" onclick="closeApplyModal()">RETURN TO WEBSITE</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SHOWCASE DETAIL MODAL -->
+  <div class="modal-backdrop" id="asset-modal" onclick="handleAssetBackdropClick(event)">
+    <div class="modal-card" style="max-width: 800px;">
+      <button class="modal-close-btn" onclick="closeAssetModal()">&times;</button>
+      
+      <div style="height: 380px; overflow: hidden; border-radius: 8px; margin-bottom: 1rem; position: relative;">
+        <img id="asset-modal-img" src="" alt="Preview" style="width:100%; height:100%; object-fit:cover;">
+        <button onclick="toggleWireframeMode()" style="position:absolute; top:1rem; right:1rem; background:rgba(0,0,0,0.8); color:var(--amber-primary); border:1px solid var(--amber-primary); padding:0.5rem 1rem; border-radius:20px; font-weight:800; cursor:pointer;">
+          ⚡ TOGGLE MESH
+        </button>
+      </div>
+
+      <h2 id="asset-modal-title" style="font-size: 1.6rem; color:#FFF;">Project Title</h2>
+      <p id="asset-modal-author" style="color: var(--amber-primary); font-size: 0.9rem;">Author</p>
+    </div>
+  </div>
+
+</body>
+</html>

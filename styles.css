@@ -753,6 +753,8 @@ body {
 .superhero-character-img:hover {
   transform: scale(1.03) translateY(-6px);
 }
+
+.page-view {
   display: none;
   opacity: 0;
   transition: opacity var(--transition);

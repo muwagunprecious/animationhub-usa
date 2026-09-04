@@ -225,3 +225,19 @@ function toggleWireframeMode() {
     modalImg.classList.toggle('wireframe-active');
   }
 }
+
+// Expose functions globally for inline HTML event handlers (ES Module compatibility)
+Object.assign(window, {
+  scrollRoadmap,
+  switchTab,
+  toggleMobileDrawer,
+  openApplyModal,
+  closeApplyModal,
+  handleBackdropClick,
+  handleFormSubmit,
+  filterShowcase,
+  openAssetModal,
+  closeAssetModal,
+  handleAssetBackdropClick,
+  toggleWireframeMode
+});
