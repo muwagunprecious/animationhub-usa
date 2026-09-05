@@ -1,10 +1,10 @@
 /* ==========================================================================
-   ANIMATION HUB USA - 3D ANIMATION ACADEMY
+   ANIMATION HUB - 3D ANIMATION ACADEMY
    Interactive Application Engine
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('Animation Hub USA Engine Initialized.');
+  console.log('Animation Hub Engine Initialized.');
 });
 
 /**
